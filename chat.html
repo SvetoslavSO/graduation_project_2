@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="welcome-page">
+    <div class="image-wrapper">
+        <img src="./pictures/Vector.svg" alt="">
+    </div>
+    <h1 class="welcome-page__header">Авторизация</h1>
+    <h2 class="welcome-page__descripton">Введите пожалуйста свой ник для дальнейшей авторизации</h2>
+    <input placeholder="введите свой ник" type="text" class="nickname">
+    <button type="button" class="submit-btn">Войти</button>
+  </div>
+  <div class="container">
+    <span class="participants">
+      <div class="logout-btn">
+        <img src="./pictures/Group 4.svg" alt="">
+      </div>
+      <div class="user__profile">
+        <div class="user__photo">
+          <img src="./pictures/photo.svg" alt="" class="user__img">
+        </div>
+        <div class="user__name"></div>
+      </div>
+      <div class="users-in-chat">Все участники:</div>
+      <ul class="users__list"></ul>
+    </span>
+    <span class="chat__content">
+      <div class="chat__header">
+        <div class="chat__name">Чат</div>
+        <div class="chat__num-of-partic"></div>
+      </div>
+      <div class="chat__text"></div>
+      <div class="chat__chat-bar">
+        <input type="text" class="chat__input" placeholder="Введите сообщение...">
+        <button type="button" class="send__btn">Отправить</button>
+      </div>
+    </span>
+  </div>
+  <!--<script type="text/x-handlebars-template" id="membersList" >
+    <div id="friendsList">
+      {{#each list}}
+      <div class="friend text-center">
+          <img src="{{photo_100}}" class="img-circle">
+          <div>{{first_name}}<br>{{last_name}}</div>
+      </div>
+      {{/each}}
+  </div>
+  </script>-->
+  <script src="script.js"></script>
+</body>
+</html>
