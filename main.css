@@ -1,0 +1,284 @@
+html, body{
+  font-family: 'Ubunty', sans-serif;;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+ul{
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+
+li{
+  display: block;
+  margin: 0;
+}
+
+.welcome-page{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #17212B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background: #232F3D;
+}
+
+.welcome-page__header{
+  color: #FFF;
+}
+
+.welcome-page__descripton{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 300px;
+}
+
+.nickname{
+  color: #858F98;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid #465461;
+  background: #17212B;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.welcome-page__descripton{
+  color: #7F91A4;
+}
+
+.submit-btn{
+  display: block;
+  border: none;
+  cursor: pointer;
+  background: #5188C1;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.container{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.participants{
+  background: #17212B;
+  width: 18%;
+  height: 100%;
+}
+
+.logout-btn{
+  margin:20px;
+}
+
+.chat__name{
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.chat__content{
+  width: 82%;
+  height: 100%;
+}
+
+.chat__header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #000;
+  background: #17212B;
+  height: 5%;
+}
+
+.chat__text{
+  border-left: 1px solid #000;
+  background: #0E1621;
+  height: 90%;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow-y: auto;
+}
+
+.chat__name{
+  color: #FFF;
+}
+
+.chat__num-of-partic{
+  color: #7F91A4;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.chat__chat-bar{
+  align-items: center;
+  justify-content: flex-start;
+  border-left: 1px solid #000;
+  background: #17212B;
+  width: 100%;
+  height: 5%;
+  display: flex;
+}
+
+.chat__input{
+  margin-left: 30px;
+  color: #FFF;
+  outline: 0;
+  border: none;
+  background: #17212B;
+  width: 90%;
+  color: #7F91A4;
+}
+
+
+.send__btn{
+  display: block;
+  border: none;
+  cursor: pointer;
+  background: #5188C1;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.user__photo{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  background: #232F3D;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+}
+
+.user__name{
+  min-width: 30px;
+}
+
+.user__profile{
+  margin-bottom: 8%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+.users-in-chat{
+  color: #FFF;
+  margin-left: 15px;
+}
+
+.photo__container{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  background: #17212B;
+  width: 350px;
+  height: 400px;
+  background: #17212B;
+}
+
+.photo__desc{
+  margin-bottom: 10px;
+  color: #7F91A4;
+}
+
+.add-photo{
+  margin-bottom: 10px;
+  align-self: center;
+  width: 300px;
+  height: 300px;
+}
+
+.new-client-msg{
+  margin: 10px;
+  padding: 10px;
+}
+
+.chat__msg{
+  display: flex;
+  margin-bottom: 10px;
+  min-height: 46px;
+}
+
+.author-n-msg{
+  flex: 1;
+}
+
+.text__content{
+  background: #658FB7;
+  display: flex;
+  min-width: 200px;
+  max-width: 75%;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.date{
+  align-self: flex-end;
+}
+
+.cancel-button{
+  display: block;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #6BB2F2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.buttons-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button{
+  display: block;
+  border: none;
+  cursor: pointer;
+  background: #1D2A3A;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #6BB2F2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
